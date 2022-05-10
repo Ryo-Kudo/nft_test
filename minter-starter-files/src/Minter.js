@@ -71,24 +71,29 @@ const Minter = (props) => {
       </button>
 
       <br></br>
-      <h1 id="title">🧙‍♂️ KUDO TEST Alchemy NFT Minter</h1>
+      <h1 id="title">👾 NFT Minter 👾</h1>
       <p>
-        Simply add your asset's link, name, and description, then press "Mint."
+        Alchemyを使ったMinting環境を構築中…。
       </p>
       <form>
+        <h2>🚧 Contractを作成するGUI（未実装）</h2>
+        <p>___</p>
         <h2>🖼 Link to asset: </h2>
+        <p>Pinataでipfsにファイルをアップロードし、発行されたURLを以下に貼り付ける。将来的に、APIで動作する様にしたい。</p>
         <input
           type="text"
           placeholder="e.g. https://gateway.pinata.cloud/ipfs/<hash>"
           onChange={(event) => setURL(event.target.value)}
         />
         <h2>🤔 Name: </h2>
+        <p>NFTの名前を入力する。</p>
         <input
           type="text"
           placeholder="e.g. My first NFT!"
           onChange={(event) => setName(event.target.value)}
         />
         <h2>✍️ Description: </h2>
+        <p>NFTのDescriptionを入力する。</p>
         <input
           type="text"
           placeholder="e.g. Even cooler than cryptokitties ;)"
@@ -100,6 +105,8 @@ const Minter = (props) => {
       </button>
       <p id="status">
         {status}
+
+        
       </p>
     </div>
   );
